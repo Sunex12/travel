@@ -1,0 +1,476 @@
+[class*="__container"] {
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1400px) {
+    [class*="__container"] {
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    [class*="__container"] {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    [class*="__container"] {
+        max-width: none;
+        margin: 0px 15px;
+    }
+}
+
+/* ---HEADER----------------------------------------------------------------- */
+
+@media(max-width: 1400px) {
+    .header__burger {
+        display: flex;
+    }
+    .menu__body {
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 320px;
+        top: 0; bottom: 0; left: -350px; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: rgb(5, 4, 4);
+        transition: all 0.8s ease 0s;
+        opacity: 0.2;
+        border-right: 10px solid #000000;
+    }
+    .active {
+        top: 0; bottom: 0; left: 0px; right: 0;
+        opacity: 0.9;
+    }
+    .menu__body ul {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
+
+/* ---Discover------------------------------------------------------------------- */
+
+@media(max-width: 1400px) {
+    .discover {
+        margin: 150px 0px 0px 0px;
+    }
+    .discover__places {
+        margin: 0px 0px 150px 0px;
+    }
+    .places-discover__title {
+        font-size: 36px;
+        line-height: 40px; 
+    }
+    .places-discover__button a {
+        font-size: 16px;
+        padding: 24px;
+    }
+    /* --------------- */
+    .card {
+        max-width: 900px;
+        padding: 5px;
+    }
+    .card__block {
+        display: flex;
+        align-items: center;
+        padding: 12px 30px 12px 12px;
+        display: flex;
+    }
+    .card__block:nth-child(2) {
+        padding: 12px 30px 12px 12px;
+    }
+    .card__block:nth-child(3) {
+        padding: 12px 30px 12px 12px;
+    }
+    .card__block:nth-child(4) {
+        padding: 12px 30px 12px 12px;
+    }
+    .block-content {
+        margin: 0px 0px 0px 12px;
+    }
+    .discover__loop {
+        position: absolute;
+        right: 5px;
+        padding: 14px;
+    }
+}
+
+@media(max-width: 991.98px) {
+    .discover {
+        margin: 120px 0px 0px 0px;
+    }
+    .discover__places {
+        margin: 0px 0px 120px 0px;
+    }
+    .places-discover__title {
+        font-size: 32px;
+        line-height: 30px; 
+    }
+    .places-discover__button a {
+        font-size: 16px;
+        padding: 20px;
+    }
+     /* --------------- */
+     .card {
+        max-width: 800px;
+        padding: 5px;
+        flex-wrap: wrap;
+    }
+    .card__block {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px 10px 10px;
+        display: flex;
+    }
+    .card__block:nth-child(2) {
+        padding: 10px 20px 10px 10px;
+    }
+    .card__block:nth-child(3) {
+        padding: 10px 20px 10px 10px;
+    }
+    .card__block:nth-child(4) {
+        padding: 10px 20px 10px 10px;
+    }
+    .block-content {
+        margin: 0px 0px 0px 10px;
+    }
+    .discover__loop {
+        position: absolute;
+        right: 5px;
+        padding: 12px;
+    }
+    .discover__loop img {
+       width: 20px;
+    }
+    .block-card__text {
+        font-size: 12px;
+    }
+    .block-card__title {
+        color: var(--theme-body, #161414);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px; 
+    }
+}
+
+@media(max-width: 767.98px) {
+    .discover {
+        margin: 80px 0px 0px 0px;
+    }
+    .places-discover__title {
+        font-size: 28px;
+        line-height: 40px; 
+    }
+    .places-discover__button a {
+        font-size: 14px;
+        padding: 16px;
+    }
+    .card__block:nth-child(1) {
+        display: none;
+    }
+    .places-discover__button {
+        margin: 24px 0px 0px 0px;
+    }
+}
+
+@media(max-width: 466.98px) {
+    ._ibg img{
+        border-radius: 0px 0px 40px 40px;
+    }
+    .main-block__image {
+        position: absolute;
+        width: 100%;
+        height: 77%;
+        top: 0;
+        left: 0;
+    }
+    .discover {
+        margin: 60px 0px 0px 0px;
+    }
+}
+
+@media(max-width: 520px) {
+    .card__block:nth-child(2) {
+        display: none;
+    }
+}
+
+@media(max-width: 370px) {
+    .card__block:nth-child(3) {
+        display: none;
+    }
+    .card {
+        max-width: 250px;
+    }
+    .discover__loop {
+        right: 10px;
+    }
+}
+
+/* ---POPULAR----------------------------------------------------------- */
+
+@media(max-width: 1400px) {
+    .popular {
+        margin: 200px 0px 0px 0px;
+    }
+    .block-popular__section:not(:last-child) {
+        margin: 0px 24px 0px 0px;
+    }
+    .block-popular__title {
+        margin: 5px 0px 0px 7px;
+        font-size: 14px;
+    }
+    .block-popular__text {
+        font-size: 12px;
+        margin: 0px 0px 0px 7px;
+    }
+    .popular__title {
+        text-align: center;
+    }
+    .popular__block {
+        margin: 40px 0px 0px 0px;
+        flex-wrap: wrap;
+    }
+    .block-popular__section:nth-child(5){
+        margin: 30px 24px 0px 0px;    
+    }
+    .block-popular__section:nth-child(6){
+        margin: 30px 0px 0px 0px;    
+    }
+}
+
+@media(max-width:991.98px) {
+    .popular {
+        margin: 240px 0px 0px 0px;
+    }
+    .block-popular__section:not(:last-child) {
+        margin: 0px 0px 0px 0px;
+    }
+    .popular__block {
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+    }
+    .block-popular__title {
+        margin: 5px 0px 0px 0px;
+        font-size: 14px;
+    }
+    .block-popular__text {
+        margin: 0px 0px 0px 0px;
+    }
+     .block-popular__section:nth-child(6) {
+        margin: 0px 0px 0px 0px;    
+    }
+    .pop-up img {
+        max-width: 60%;
+    }
+}
+
+@media(max-width: 767.98px) {
+    .popular {
+        margin: 280px 0px 0px 0px;
+    }
+    .popular__title {
+        font-size: 28px;
+    }
+    .pop-up img {
+        max-width: 70%;
+    }
+}
+
+@media(max-width: 466.98px) {
+    .popular {
+        margin: 200px 0px 0px 0px;
+    }
+    .popular__block {
+        flex-direction: column;
+    }
+    .popular__title {
+        font-size: 24px;
+    }
+    .pop-up img {
+        max-width: 90%;
+    }
+}
+    
+/* --HOTEL-------------------------------------------------------------------------------- */
+
+@media(max-width: 1400px) {
+    .hotels {
+        margin: 100px 0px 0px 0px;
+    }
+    .block__title-block {
+        justify-content:end;
+    }
+    .hotels__title {
+        margin: 0 auto;
+    }
+    .hotels__block {
+        margin: 40px 0px 0px 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .block-hotels__section:not(:last-child) {
+        margin: 0px 24px 0px 0px;
+    }
+    .block-hotels__section:nth-child(2) {
+        margin: 0px 0px 0px 0px;
+    }
+    .block-hotels__section:nth-child(3) {
+        margin: 30px 24px 0px 0px;
+    }
+    .block-hotels__section:nth-child(4) {
+        margin: 30px 0px 0px 0px;
+    }
+    .box-hotels__img img {
+        margin: 0px 0px 0px 7px;
+    }
+    .block-hotels__title {
+        font-size: 14px;
+        margin: 10px 0px 0px 7px;
+    }
+    .box-hotels__text {
+        font-size: 12px;
+    }
+    .box-hotels__stars img {
+        width: 70px;
+    }
+}
+
+@media(max-width: 991.98px) {
+    .hotels__block {
+        gap: 30px;
+    }
+    .block-hotels__section:not(:last-child) {
+        margin: 0px 0px 0px 0px;
+    }
+    .block-hotels__section:nth-child(2) {
+        margin: 0px 0px 0px 0px;
+    }
+    .block-hotels__section:nth-child(3) {
+        margin: 0px 0px 0px 0px;
+    }
+    .block-hotels__section:nth-child(4) {
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+@media(max-width: 767.98px) {
+    .hotels {
+        margin: 80px 0px 0px 0px;
+    }
+    .hotels__title {
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 466.98px) {
+    .hotels__title {
+        font-size: 24px;
+    }
+}
+
+/* ---ADVICE-------------------------------------------------------------- */
+
+@media(max-width: 1400px) {
+    .advice {
+        margin: 100px 0px 0px 0px;
+    }
+    .advice__block {
+        margin: 40px 0px 0px 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+    .advice-box:not(:last-child) {
+        margin: 0px 0px 0px 0px;
+    }
+    .block-advice__box {
+        max-width: 500px;  
+    }
+}
+
+@media(max-width: 767px) {
+    .advice {
+        margin: 80px 0px 0px 0px;
+    }
+}
+
+@media(max-width: 658px) {
+    .advice-box {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .block-advice__box-title {
+        text-align: center;
+        font-size: 20px;
+        margin: 20px 0px 0px 0px;
+    }
+    .advice-box:last-child {
+        margin: 40px 0px 0px 0px;
+    }
+    .block-advice__box-text {
+        text-align: center;
+        font-size: 14px;
+        margin: 10px 0px 0px 0px;
+    }
+    .block-advice__box-img {
+        text-align: center;
+        margin: 20px 0px 0px 0px;
+    }
+    .block-advice__box {
+        margin: 0px 0px 0px 0px;
+    }
+    .block-advice__img {
+        margin: 20px auto;
+    }
+    .block-advice__img img {
+        max-width: 100%;
+    }
+    .delete {
+        display: none;
+    }
+    .spawn {
+        display: flex;
+    }
+}
+
+@media(max-width: 466.98px) {
+    .block-advice__box-title {
+        text-align: center;
+        font-size: 18px;
+        margin: 20px 0px 0px 0px;
+    }
+    .block-advice__box-text {
+        font-size: 14px;
+        margin: 10px 0px 0px 0px;
+    }
+    .block-advice__box-img {
+        text-align: center;
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+@media(max-width: 1400px) {
+    .activities {
+        margin: 100px 0px 0px 0px;
+    }
+    .activities__block {
+        margin: 40px 0px 0px 0px;
+        gap: 30px;
+    }
+    .block-activities__text {
+        margin: 16px 0px 0px 7px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 767.98px) {
+    .activities {
+        margin: 80px 0px 0px 0px;
+    }
+}

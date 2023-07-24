@@ -60,4 +60,3 @@ function checkMediaQuery() {
 
 window.addEventListener('resize', checkMediaQuery); // Get a method for the previous script to work
 
-

@@ -250,7 +250,7 @@
 
 @media(max-width:991.98px) {
     .popular {
-        margin: 140px 0px 0px 0px;
+        margin: 200px 0px 0px 0px;
     }
     .block-popular__section:not(:last-child) {
         margin: 0px 0px 0px 0px;
@@ -597,16 +597,10 @@
 }
 
 @media(max-width: 466.98px) {
-    .footer-column ul a:hover {
-        text-decoration: none;
-    }
     .block-hotels__img img:hover {
-        transform: none;
+        transform: scale(1);
     }
     .block-popular__img img:hover {
-        transform: none;
-    }
-    .menu__link:hover {
-        text-decoration: none;
+        transform: translate(0, 0);
     }
 }

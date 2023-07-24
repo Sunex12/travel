@@ -603,4 +603,16 @@
     .block-popular__img img:hover {
         transform: translate(0, 0);
     }
+    .footer-column ul a:hover {
+        text-decoration: underline;
+    }
+    .subscribe-footer__button:hover {
+        background: var(--theme-primary, #7B61FF);
+    }
+    .discover__loop:hover {
+        background: var(--theme-primary, #7B61FF);
+    }
+    .menu__link:hover {
+        text-decoration: none;
+    }
 }

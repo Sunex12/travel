@@ -250,7 +250,7 @@
 
 @media(max-width:991.98px) {
     .popular {
-        margin: 240px 0px 0px 0px;
+        margin: 140px 0px 0px 0px;
     }
     .block-popular__section:not(:last-child) {
         margin: 0px 0px 0px 0px;
@@ -277,7 +277,7 @@
 
 @media(max-width: 767.98px) {
     .popular {
-        margin: 280px 0px 0px 0px;
+        margin: 140px 0px 0px 0px;
     }
     .popular__title {
         font-size: 28px;
@@ -289,7 +289,7 @@
 
 @media(max-width: 466.98px) {
     .popular {
-        margin: 200px 0px 0px 0px;
+        margin: 100px 0px 0px 0px;
     }
     .popular__block {
         flex-direction: column;

@@ -603,4 +603,10 @@
     .block-popular__img img:hover {
         transform: translate(0, 0);
     }
+    .hotels__img {
+        display: none;
+    }
+    .hotel__view {
+        display: flex;
+    }
 }

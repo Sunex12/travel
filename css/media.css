@@ -596,3 +596,17 @@
     }
 }
 
+@media(max-width: 466.98px) {
+    .footer-column ul a:hover {
+        text-decoration: none;
+    }
+    .block-hotels__img img:hover {
+        transform: none;
+    }
+    .block-popular__img img:hover {
+        transform: none;
+    }
+    .menu__link:hover {
+        text-decoration: none;
+    }
+}

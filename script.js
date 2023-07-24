@@ -53,7 +53,7 @@ function checkMediaQuery() {
         })
     } else if (window.innerWidth <= 1400) {
        viewAdd.forEach(item => {
-            item.style.display = 'flex';
+            item.style.display = 'block';
        })
     }
 }

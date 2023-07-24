@@ -50,11 +50,20 @@ function checkMediaQuery() {
     if (window.innerWidth <= 1400) {
         viewDelete.forEach(item => {
             item.style.display = 'none';
-        })
+        }) 
     } else if (window.innerWidth >= 1400) {
+        viewDelete.forEach(item => {
+            item.style.display = 'flex'
+        })
+    } 
+    if (window.innerWidth <= 1400) {
        viewAdd.forEach(item => {
             item.style.display = 'flex';
        })
+    } else if (window.innerWidth >= 1400) {
+        viewAdd.forEach(item => {
+            item.style.display = 'none'
+        })
     }
 }
 
